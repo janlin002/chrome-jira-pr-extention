@@ -1,0 +1,15 @@
+.pr-review-message__btn {
+    padding: 4px 0 0;
+    color: #172B4D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .pr-review-message__btn:hover {
+    text-decoration: underline;
+  }
+  .pr-review-message__btn:disabled {
+    text-decoration: none;
+    cursor: default;
+    opacity: .8;
+  }

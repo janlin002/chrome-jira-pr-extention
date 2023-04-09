@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "PR review",
+    "version": "0.0.1",
+    "permissions": [
+        "storage"
+      ],
+    "action": {
+        "default_popup": "popup/index.html"
+    },
+    "content_scripts": [
+        {
+          "js": ["content/content_script.js"],
+          "css": ["content/style.css"],
+          "matches": [
+            "https://bitbucket.org/*"
+          ]
+        }
+    ],
+    "background": {
+    "service_worker": "background.js"
+    }
+}
